@@ -20,6 +20,7 @@ class SplashFragment : Fragment() {
 
     private lateinit var handler: Handler
 
+
     private val switchFragments = {
         requireActivity().supportFragmentManager.commit {
             replace(R.id.fragment_container, MainFragment())
@@ -27,6 +28,8 @@ class SplashFragment : Fragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
+
         return inflater.inflate(R.layout.fragment_splash, container, false)
     }
 
