@@ -10,34 +10,31 @@
     <ImageView android:id="@+id/iv_photo"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription"
-        tools:scaleType="centerCrop"
         tools:src="@drawable/splash" />
 
     <ImageView android:id="@+id/grey_bar"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:alpha="0.38"
-        android:src="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/iv_photo"
-        tools:ignore="ContentDescription" />
+        tools:src="@color/black" />
 
     <TextView style="@style/MySubtitle1"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="@dimen/margin_normal"
         android:layout_marginBottom="12dp"
-        android:text="Really good Girls"
         app:layout_constraintBottom_toBottomOf="@+id/grey_bar"
         app:layout_constraintStart_toStartOf="@+id/grey_bar"
-        tools:ignore="HardcodedText" />
+        tools:text="Really good Girls" />
 
-    <ImageView android:layout_width="24dp"
-        android:layout_height="24dp"
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="12dp"
-        android:contentDescription="@string/unlike"
+        android:contentDescription="@string/like_button"
         android:src="@drawable/ic_24_unliked"
         app:layout_constraintBottom_toBottomOf="@id/grey_bar"
         app:layout_constraintEnd_toEndOf="@id/grey_bar" />

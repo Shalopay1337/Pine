@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="MySubtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
         <item name="fontFamily">serif-monospace</item>
         <item name="android:letterSpacing">0.15</item>
         <item name="android:textColor">@color/white</item>
     </style>
+
+    <dimen name="elevation_base">2dp</dimen>
+    <dimen name="margin_small_half">8dp</dimen>
+    <dimen name="margin_small">16dp</dimen>
+    <dimen name="margin_normal">24dp</dimen>
+    <dimen name="margin_big">32dp</dimen>
+    <dimen name="margin_extra">48dp</dimen>
+    <dimen name="text_size_small">16sp</dimen>
+    <dimen name="text_size_normal">20sp</dimen>
+    <dimen name="profile_photo_size">180dp</dimen>
+    <dimen name="recycler_view_height">160dp</dimen>
+    <item name="letter_spacing_normal" format="float" type="integer">0.01</item>
+    <item name="letter_spacing_big" format="float" type="integer">0.15</item>
+    <item name="guideline_central" format="float" type="integer">0.5</item>
 </resources>

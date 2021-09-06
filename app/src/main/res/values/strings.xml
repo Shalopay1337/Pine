@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Pine</string>
+    <string name="app_logo">app logo</string>
+    <string name="back_button">back button</string>
+    <string name="share_button">share button</string>
+    <string name="download_button">download button</string>
+    <string name="like_button">like button</string>
+    <string name="search_button">search button</string>
+    <string name="profile">Profile</string>
+    <string name="email">email</string>
+    <string name="search_hint">Search</string>
+    <string name="clock">clock</string>
+    <string name="hint_search">Search</string>
+    <string name="logout_button">Logout button</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="progress_indicator">Progress indicator</string>
+    <string name="error_small_connection">Check connection and try again</string>
+    <string name="error_small_found">Change the keyword and try again</string>
+    <string name="error_big_connection">No connection</string>
+    <string name="error_big_found">Nothing found</string>
 </resources>

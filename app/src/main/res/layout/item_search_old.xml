@@ -9,8 +9,8 @@
     <ImageView android:id="@+id/iv_clock"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small_half"
         android:contentDescription="@string/clock"
         android:src="@drawable/ic_24_clock"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,12 +18,11 @@
 
     <TextView style="@style/TextAppearance.MaterialComponents.Subtitle1"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="8dp"
-        android:text="Cool Girls really cool"
-        android:textSize="16sp"
+        android:layout_height="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/margin_big"
+        android:layout_marginBottom="@dimen/margin_small_half"
+        android:textSize="@dimen/text_size_small"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/iv_clock"
-        tools:ignore="HardcodedText" />
+        tools:text="Cool Girls really cool" />
 </androidx.constraintlayout.widget.ConstraintLayout>

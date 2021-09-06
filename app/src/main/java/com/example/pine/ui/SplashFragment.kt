@@ -1,19 +1,15 @@
 package com.example.pine.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.postDelayed
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-
 import com.example.pine.R
-import java.util.*
-import kotlin.concurrent.schedule
+import com.example.pine.ui.main.MainFragment
 
 
 class SplashFragment : Fragment() {
@@ -23,20 +19,18 @@ class SplashFragment : Fragment() {
 
     private val switchFragments = {
         requireActivity().supportFragmentManager.commit {
-            replace(R.id.fragment_container, MainFragment())
+            replace(R.id.fragment_container_app_activity, MainFragment())
         }
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
-
         return inflater.inflate(R.layout.fragment_splash, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         handler = Handler(Looper.myLooper()!!).apply {
             postDelayed(
-                switchFragments, 2000L
+                switchFragments, 1500L
             )
         }
     }
@@ -45,4 +39,6 @@ class SplashFragment : Fragment() {
         super.onDestroyView()
         handler.removeCallbacks(switchFragments)
     }
+
+
 }
