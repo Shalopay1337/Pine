@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline android:id="@+id/action_bar_guideline_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="?attr/actionBarSize" />
+
+    <ImageView android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_small"
+        android:contentDescription="@string/back_button"
+        android:src="@drawable/ic_24_back"
+        app:layout_constraintBottom_toTopOf="@id/action_bar_guideline_search"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_big"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:autofillHints="Search"
+        android:hint="@string/hint_search"
+        android:inputType="text"
+        android:letterSpacing="@integer/letter_spacing_big"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toTopOf="@id/action_bar_guideline_search"
+        app:layout_constraintStart_toEndOf="@+id/iv_back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.fragment.app.FragmentContainerView android:id="@+id/fragment_container_search"
+        android:name="com.example.pine.ui.search.SearchHintOldFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/action_bar_guideline_search" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
